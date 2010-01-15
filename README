@@ -1,0 +1,20 @@
+Get Blackberry OTA Installation
+
+This is a simple script to retreive all files for an OTA install using a *.jad file.  It
+will create the necessary *.alx file used by the Blackberry Desktop Manager Application.
+
+This script is tested on OSX with the MacPorts version of wget installed.
+
+Disclaimer
+==========
+It is by no means perfect.  Use at your own risk!  If you brick your blackberry, you've
+only got the interweb to help you - there's plenty of sites for this.
+
+Known Issues
+============
+* There's currently no input checking.
+* Binary wget install on Mac OSX doesn't accept the --no-check-certificates wget option.
+* Doesn't always create the ALX file correctly.
+	If your apploader hangs, then most likely the ALX file is borked.  You can try
+	manually editing it.
+* Hard coded Blackberry 8800 User-Agent for now
